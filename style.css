@@ -1,0 +1,252 @@
+/*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+
+/*
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625= 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+/************************************/
+/* HERO SECTION */
+/************************************/
+
+.section-hero {
+  padding: 12.8rem 3.2rem;
+  position: relative;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img-box {
+  background-color: hsl(270, 20%, 96%);
+  width: 55%;
+  padding: 0 3.2rem 4.8rem 3.2rem;
+  border-radius: 3rem;
+  justify-self: end;
+  border: 1.2rem solid #fff;
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero-img-box::before {
+  content: "";
+  z-index: 0;
+  background-color: red;
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(rgb(233, 66, 255), hsl(264, 100%, 61%));
+  top: 0;
+  left: 0;
+  padding: 40rem 30rem;
+  border-bottom-left-radius: 130px;
+  border-bottom-right-radius: 250px;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  gap: 0.6rem;
+  background-image: linear-gradient(rgb(233, 66, 255), hsl(264, 100%, 61%));
+  padding: 2.4rem 3.2rem 1.6rem 3.2rem;
+  margin-bottom: 1.6rem;
+  /* width: 40rem; */
+  margin-left: -3.3rem;
+  width: 31.8rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.items {
+  list-style: none;
+}
+
+.person-name {
+  margin-bottom: 0.6rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+.person-avalibility {
+  color: #ddd;
+}
+
+.section-messages {
+}
+.owner {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.owner-message {
+  color: hsl(276, 55%, 52%);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0.6rem 0.8rem;
+  background-color: #ddd;
+  margin-bottom: 0.8rem;
+  width: 70%;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.client-images {
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: end;
+}
+.dog {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 0.9rem;
+}
+.client-messsage {
+  color: hsl(271, 15%, 43%);
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  margin-left: 9.4rem;
+}
+
+.client-messsage--two {
+  padding: 0.6rem 0.8rem;
+  color: hsl(271, 15%, 43%);
+  background-color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  width: 50%;
+  margin-left: 14.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  width: 80%;
+}
+
+.prices li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.price-small {
+  background-image: linear-gradient(
+    to right,
+    rgb(233, 66, 255),
+    hsl(264, 100%, 61%)
+  );
+  padding: 1.2rem 2.4rem;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+  border-top-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+}
+.price-big {
+  background-image: linear-gradient(
+    to right,
+    rgb(233, 66, 255),
+    hsl(264, 100%, 61%)
+  );
+  padding: 1.2rem 2.4rem;
+  align-items: center;
+  color: #ddd;
+  border-top-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+}
+
+.price {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.send-message {
+  position: relative;
+}
+
+.hero-text-box {
+  align-self: center;
+  padding: 0 9.4rem;
+}
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.hero-description {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+}
+
+.send-message input {
+  border: none;
+  padding: 1.2rem 3.2rem;
+  width: 100%;
+  border-radius: 2.2rem;
+  margin-left: -0.8rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(0, -50%);
+}
